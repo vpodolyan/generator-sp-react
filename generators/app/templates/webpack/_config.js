@@ -12,7 +12,7 @@ const doConfig = opts => {
   return {
     context: path.resolve('app'),
     entry: {
-      app: ['babel-polyfill', './scripts/main.js'],
+      app: ['babel-polyfill', './src/index.js'],
     },
     resolve: {
       extensions: [
@@ -109,19 +109,9 @@ const doConfig = opts => {
         'window.$': 'jquery',
         _: 'underscore',
       }),
-      new (HtmlWebpackPlugin)({
-        filename: 'index.html',
-        template: 'html/index.jade',
-      }),
-      new (HtmlWebpackPlugin)({
-        filename: 'auth_fail.html',
-        template: 'html/auth_fail.jade',
-        inject: false,
-      }),
-      new (HtmlWebpackPlugin)({
-        filename: 'auth_success.html',
-        template: 'html/auth_success.jade',
-        inject: false,
+      new HtmlWebpackPlugin({
+        title: 'React-Redux simple app',
+        filename: '../app/index.html',
       }),
       new ExtractTextPlugin('frassets/app.[contenthash].css', {
         allChunks: true,

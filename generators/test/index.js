@@ -25,10 +25,10 @@ module.exports = yeoman.Base.extend({
     var pathParts = this.path.split('/');
     var innerPath = pathParts.slice(0, pathParts.length - 1);
     return [
-      'app/scripts',
+      'app',
     ].concat(
       innerPath,
-      '__test__'
+      'test'
     ).join('/');
   },
 
