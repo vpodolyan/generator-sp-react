@@ -1,4 +1,4 @@
-# generator-sp [![Build Status](https://secure.travis-ci.org/snphq/generator-sp.png?branch=master)](https://travis-ci.org/snphq/generator-sp)
+# generator-sp-react [![Build Status](https://secure.travis-ci.org/snphq/generator-sp.png?branch=master)](https://travis-ci.org/snphq/generator-sp)
 
 
 [![Dependency Status](https://david-dm.org/snphq/generator-sp.png)](https://david-dm.org/snphq/generator-sp)
