@@ -111,7 +111,7 @@ const doConfig = opts => {
       }),
       new HtmlWebpackPlugin({
         title: 'React-Redux simple app',
-        filename: '../app/index.html',
+        template: '../app/index.html',
       }),
       new ExtractTextPlugin('frassets/app.[contenthash].css', {
         allChunks: true,
